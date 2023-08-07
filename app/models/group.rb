@@ -3,6 +3,6 @@ class Group < ApplicationRecord
     has_many :group_wallets
     has_many :wallets, through: :group_wallets
 
-    validates :icon, presence: true
     validates :name, presence: true
+    validates :icon, presence: true
 end

@@ -1,3 +1,21 @@
+body {
+    background-color: #f5f5f5;
+}
 .menu {
     background-color: #220237;
+}
+.img-item {
+    height: 100%;
+    width: 20%;
+}
+
+.custom_color {
+    color: #2e054a;
+}
+
+.error {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
