@@ -5,7 +5,10 @@
     <% if user_signed_in? %>
   <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
 <% else %>
-  <%= link_to 'Sign in', new_user_session_path %>
+<div class="d-flex flex-row gap-3">
+<%= link_to 'Sign in', new_user_session_path, style: "text-decoration:none;" %>
+<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+</div>
 <% end %>
     </h5>
   </div>
@@ -15,6 +18,9 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="d-flex flex-row align-items-center align-items-center gap-2 text-light notifaction">
+    <%= render partial: '/share/notification' %>
     <span class="text-light"><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
   </div>
 </nav>

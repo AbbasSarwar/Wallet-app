@@ -3,6 +3,7 @@ body {
 }
 .menu {
     background-color: #220237;
+    text-decoration: none;
 }
 .img-item {
     height: 100%;
@@ -19,3 +20,4 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
