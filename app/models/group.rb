@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
     belongs_to :user
-    has_many :group_entities
-    has_many :entities, through: :group_entities
+    has_many :group_wallets
+    has_many :wallets, through: :group_wallets
 end

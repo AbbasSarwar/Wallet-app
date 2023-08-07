@@ -1,4 +1,4 @@
 class Entity < ApplicationRecord
   belongs_to :user
-  has_many :groups, through: :group_entities
+  has_many :groups, through: :group_wallets
 end
