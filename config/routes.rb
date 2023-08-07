@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'groups/index'
-  get 'groups/show'
   root 'groups#index'
+
+  resources :users do
+    resources :groups do
+      resources :wallets
+    end
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
