@@ -12,24 +12,25 @@ class GroupsController < ApplicationController
     @current_user = current_user
     @group = @current_user.groups.find(params[:id])
     @wallets = @group.wallets
-    # @wallet = @wallets.find(params[:id])
   end
 
-  def new 
+  def new
     @current_user = current_user
     @group = Group.new
   end
+
   def create
-    @createGroup = current_user.groups.build(group_params)
-    if @createGroup.save
-      flash[:notice] = "Successful Added"
+    @create_group = current_user.groups.build(group_params)
+    if @create_group.save
+      flash[:notice] = 'Successful Added'
       redirect_to user_groups_path(current_user)
     else
-      flash[:alert] = "failed to Add"
+      flash[:alert] = 'failed to Add'
     end
   end
 
   private
+
   def group_params
     params.require(:group).permit(:name, :icon)
   end

@@ -1,15 +1,22 @@
-<div class="container-fluid">
-<div class='top d-flex flex-row align-items-center justify-content-between py-2'>
-<h1 class="text-center text-dark"><%= @group.name %></h1>
+<div>
+<%= render partial: 'share/nav', locals: { back: "Go back", back_path: root_path } %>
+<div class='top d-flex flex-row align-items-center justify-content-between p-2'>
+<h1 class="text-center text-dark"><%= image_tag @group.icon, class: "small-icon" %><%= @group.name %></h1>
 <h2>
-<%= @wallets.map { |item| item.amount }.sum %>
+<%= @wallets.map { |item| item.amount }.sum %> $
 </h2>
 </div>
-<div class="items-container">
+<div class="items-container p-2">
 <ul class="card list-group">
 <% @wallets.each do |wallet| %>
-<li class="list-group-item">
-<%= wallet.name %>
+<li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+<div class="fs-4">
+<%= link_to wallet.name, user_group_wallet_path(current_user, @group, wallet.id), class: "text-decoration-none text-primary" %>
+</div>
+<div class="d-flex flex-column align-items-center">
+<h4 class="fs-4"><%= wallet.amount %> $</h4>
+<span class="text-primary"><b class="text-dark px-2">Date: </b><%= wallet.created_at.strftime('%B-%d-%Y') %></span>
+</div>
 </li>
 <% end %>
 </ul>
