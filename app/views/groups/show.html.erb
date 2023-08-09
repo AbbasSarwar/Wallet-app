@@ -1,2 +1,18 @@
-<h1>Groups#show</h1>
-<p>Find me in app/views/groups/show.html.erb</p>
+<div class="container-fluid">
+<div class='top d-flex flex-row align-items-center justify-content-between py-2'>
+<h1 class="text-center text-dark"><%= @group.name %></h1>
+<h2>
+<%= @wallets.map { |item| item.amount }.sum %>
+</h2>
+</div>
+<div class="items-container">
+<ul class="card list-group">
+<% @wallets.each do |wallet| %>
+<li class="list-group-item">
+<%= wallet.name %>
+</li>
+<% end %>
+</ul>
+</div>
+<div class="button"><%= render partial: 'share/button', locals: {button_text:"Add New", button_path:new_user_group_wallet_path(current_user, @group)} %></div>
+</div>
