@@ -35,6 +35,7 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: Wallet_app
   username: postgres
   password: admin
