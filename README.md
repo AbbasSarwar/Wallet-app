@@ -131,7 +131,7 @@ Thanks.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank you All Microverse community.
+I would like to thank you Gregoire Vella on Behance & Miroverse community.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

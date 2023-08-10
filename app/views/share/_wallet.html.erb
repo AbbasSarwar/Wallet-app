@@ -9,6 +9,11 @@
         <%= form.label :amount %>
         <%= form.text_field :amount, name: 'wallet[amount]' %>
       </div>
+
+      <div class="field mb-3 d-flex flex-column justify-content-center">
+      <%= form.label :category, option_for_select(@group) %>
+      <%= form.select :amount, name: 'wallet[category]' %>
+    </div>
   
       <div class="mb-3">
         <%= form.submit "Submit" %>
