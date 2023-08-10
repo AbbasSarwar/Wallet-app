@@ -122,7 +122,7 @@ Contributions, issues, and feature requests are welcome!
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like my Recipe-app Project project kindly comment or Follow me on LinkedIn, Twitter & twitter and always Your feedback will be really appreciated I have created issue if you want to share.
+If you like my Wallet-app Project project kindly comment or Follow me on LinkedIn, Twitter & twitter and always Your feedback will be really appreciated I have created issue if you want to share.
 Thanks. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
