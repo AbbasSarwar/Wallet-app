@@ -1,0 +1,23 @@
+<%= form_with url: user_group_wallets_path, method: :post do |form| %>
+    <div class="card p-3">
+      <div class="field mb-3 d-flex flex-column justify-content-center">
+        <%= form.label :name %>
+        <%= form.text_field :name, name: 'wallet[name]' %>
+      </div>
+  
+      <div class="field mb-3 d-flex flex-column justify-content-center">
+        <%= form.label :amount %>
+        <%= form.text_field :amount, name: 'wallet[amount]' %>
+      </div>
+
+      <div class="field mb-3 d-flex flex-column justify-content-center">
+      <%= form.label :groups %>
+      <%= form.select :groups, options_from_collection_for_select(@groups, 'id', 'name') %>
+    </div>
+  
+      <div class="mb-3">
+        <%= form.submit "Submit" %>
+      </div>
+    </div>
+  <% end %>
+  
