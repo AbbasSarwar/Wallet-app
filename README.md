@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>Budget-app Project README Template</b></h3>
+  <h3><b>Wallet-app Project README Template</b></h3>
 
 </div>
 
@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[BudgetApp\] ](#-Budget-app-)
+- [📖 \[WalletApp\] ](#-Wallet-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Budget-app] <a name="about-project"></a>
+# 📖 [Wallet-app] <a name="about-project"></a>
 
-**[Budget-app]** is a simple app where you can create different catogeries and add items and amount for them.
+**[Wallet-app]** is a simple app where you can create different catogeries and add items and amount for them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,7 +55,11 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+### Key Features <a name="Demo"></a>
 
+[DEMO](https://budget-app-omti.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
