@@ -3,6 +3,7 @@
   font-family: proxima;
   src: url(FontsFree-Net-Proxima-Nova-Bold.otf);
 }
+
 @font-face {
   font-family: proxima-light;
   src: url(FontsFree-Net-Proxima-Nova-Light.otf);
@@ -13,12 +14,18 @@ body {
   height: 100%;
   font-weight: 100;
 }
-body h1,h2,h3,h4,h5 {
-  font-family: proxima;
 
+body h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: proxima, sans-serif;
 }
-body p, span {
-  font-family: proxima-light;
+
+body p,
+span {
+  font-family: proxima-light, sans-serif;
   color: #3378c2;
 }
 
@@ -75,7 +82,8 @@ body p, span {
   src: url(FontsFree-Net-Proxima-Nova-Bold.otf);
 }
 
-.navs, .navs span {
+.navs,
+.navs span {
   background-color: #3378c2;
   color: #fff;
 }
@@ -84,9 +92,10 @@ body p, span {
   background-color: #5fb523;
   font-size: 18px;
   font-weight: 500;
-  transition: .5s;
+  transition: 0.5s;
 }
+
 .btn:hover {
   background-color: #1abaeb;
-  color: #000000;
+  color: #000;
 }
