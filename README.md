@@ -29,7 +29,7 @@
 
 # 📖 [Budget-app] <a name="about-project"></a>
 
-**[Budget-app]** is a simple app where you can create different catogeries and add amount for them.
+**[Budget-app]** is a simple app where you can create different catogeries and add items and amount for them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,6 +47,10 @@
 
 ### Key Features <a name="key-features"></a>
 - **[Model ]**
+- **[Create Group]**
+- **[Create Wallet]**
+- **[Final Testing]**
+- **[Login / Sign up]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

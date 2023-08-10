@@ -1,4 +1,5 @@
 class WalletsController < ApplicationController
+  before_action :authenticate_user!
   def show
     @current_user = current_user
     @group = @current_user.groups.find(params[:group_id])
